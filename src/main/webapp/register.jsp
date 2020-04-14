@@ -43,19 +43,29 @@
     </div>
   </nav>
 
-  <!-- Landing -->
-  <div class="landing">
-    <div class="dark-overlay landing-inner text-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 class="display-3 mb-4">Developer Connector
-            </h1>
-            <p class="lead"> Create a developer profile/portfolio, share posts and get help from other developers</p>
-            <hr />
-            <a href="register" class="btn btn-lg btn-info mr-2">Sign Up</a>
-            <a href="login" class="btn btn-lg btn-light">Login</a>
-          </div>
+  <!-- Register -->
+  <div class="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <h1 class="display-4 text-center">Sign Up</h1>
+          <p class="lead text-center">Create your DevConnector account</p>
+          <form action="create-profile">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Name" name="name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control form-control-lg" placeholder="Email Address" name="email" />
+              <small className="form-text text-muted">This site uses Gravatar so if you want a profile image, use a Gravatar email</small>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control form-control-lg" placeholder="Confirm Password" name="password2" />
+            </div>
+            <input type="submit" class="btn btn-info btn-block mt-4" />
+          </form>
         </div>
       </div>
     </div>
@@ -74,3 +84,4 @@
     crossorigin="anonymous"></script>
 </body>
 
+</html>
